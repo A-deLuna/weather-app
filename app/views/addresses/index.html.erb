@@ -1,0 +1,8 @@
+<% content_for :head do %>
+  <%= javascript_import_module_tag "map" %>
+<% end %>
+<%=javascript_include_tag google_places_url, async: true %>
+<p>
+<label for="address">  Enter your address: </label>
+<input type="text" id="address" />
+</p>

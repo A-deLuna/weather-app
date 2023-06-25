@@ -12,7 +12,8 @@ module Weather
     config.load_defaults 7.0
 
     # Configuration for the application, engines, and railties goes here.
-    #
+    config.maps = config_for(:maps)
+    config.weather = config_for(:weather)
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
