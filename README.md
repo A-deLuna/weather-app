@@ -1,6 +1,8 @@
 # Weather Service
 A simple weather service that caches responses.
 
+See it in action at: https://falling-frog-6385.fly.dev
+
 <img width="1033" alt="Screenshot 2023-06-26 at 9 47 23 AM" src="https://github.com/A-deLuna/weather-app/assets/7422005/08e28117-99ec-45ef-a7b3-dcdec1bde45f">
 <img width="1033" alt="Screenshot 2023-06-26 at 9 47 12 AM" src="https://github.com/A-deLuna/weather-app/assets/7422005/f32cd86b-1c11-410e-a089-a20af74e1217">
 
