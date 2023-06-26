@@ -1,7 +1,7 @@
 <div class="outline-1 outline-black">
-  <h3> <%= forecast.date.strftime('%A') %> </h3>
-  <h3> <%= forecast.date.strftime('%B %d') %> </h3>
+  <h3 class="weekday"> <%= weekday forecast.date %> </h3>
+  <h3 class="month-day"> <%= month_and_day forecast.date %> </h3>
   <%= image_tag forecast.icon %>
-  <p> Low: <%=  forecast.low %> </p>
-  <p> High: <%= forecast.high %> </p>
+  <p class="temp-low"> Low: <%=  forecast.low %> </p>
+  <p class="temp-high"> High: <%= forecast.high %> </p>
 </div>
