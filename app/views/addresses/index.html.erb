@@ -1,8 +1,10 @@
 <% content_for :head do %>
   <%= javascript_import_module_tag "map" %>
 <% end %>
-<%=javascript_include_tag google_places_url, async: true %>
-<p>
-<label for="address">  Enter your address: </label>
-<input type="text" id="address" />
-</p>
+<%=javascript_include_tag google_places_url, defer: true %>
+<%= form_with url: "/forecasts", method: :get do |form| %>
+  <%= form.label :address, "Enter your address:" %>
+  <%= form.text_field :address %>
+  <%= form.hidden_field :lat  %>
+  <%= form.hidden_field :lng  %>
+<% end %>
