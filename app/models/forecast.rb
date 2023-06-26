@@ -1,4 +1,4 @@
 class Forecast
   include ActiveModel::API
-  attr_accessor :temp_c, :temp_f, :icon
+  attr_accessor :now, :icon, :high, :low, :date
 end

@@ -8,7 +8,6 @@ function initMap() {
     console.log('place selected');
     const place = autocomplete.getPlace();
     var postal_code = "";
-    debugger;
     for (const component of place.address_components) {
       const type = component.types[0];
       if (type == 'postal_code') {

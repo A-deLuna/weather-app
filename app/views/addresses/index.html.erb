@@ -2,9 +2,12 @@
   <%= javascript_import_module_tag "map" %>
 <% end %>
 <%=javascript_include_tag google_places_url, defer: true %>
-<%= form_with url: "/forecasts", method: :get do |form| %>
-  <%= form.label :address, "Enter your address:" %>
-  <%= form.text_field :address %>
-  <%= form.hidden_field :lat  %>
-  <%= form.hidden_field :lng  %>
-<% end %>
+<div class="container mx-auto text-center">
+  <h1 class="text-2xl font-semibold" > Weather App </h1>
+  <%= form_with url: "/forecasts", method: :get do |form|%>
+    <%= form.label :address, "Enter your address:" %>
+    <%= form.text_field :address %>
+    <%= form.hidden_field :lat  %>
+    <%= form.hidden_field :lng  %>
+  <% end %>
+</div>

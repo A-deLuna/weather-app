@@ -7,7 +7,6 @@ class ForecastsController < ApplicationController
   end
 
   def show
-    @forecast = WeatherService.from_position(lat: lat, lng: lng)   
     @name = name
     @cached = true
     @forecast = Rails.cache.fetch("weather/zip/#{zip}", expires_in: 30.minutes) do

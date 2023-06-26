@@ -1,3 +1,7 @@
-<%= image_tag @forecast.icon %>
-Celcius: <%= @forecast.temp_c %>
-Farenheit: <%=  @forecast.temp_f %>
+<div class="outline-1 outline-black">
+  <h3> <%= forecast.date.strftime('%A') %> </h3>
+  <h3> <%= forecast.date.strftime('%B %d') %> </h3>
+  <%= image_tag forecast.icon %>
+  <p> Low: <%=  forecast.low %> </p>
+  <p> High: <%= forecast.high %> </p>
+</div>
